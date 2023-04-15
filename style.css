@@ -9,7 +9,7 @@ body {
   /* padding: 10px; */
 
   display: grid;
-  gap: 1rem;
+  /* gap: 1rem; */
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas:
     "h1 h1 h1"
@@ -22,24 +22,103 @@ body {
     "footer footer footer";
 }
 .wrapper > * {
-  display: grid;
+  /* display: grid;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   padding: 1rem;
 }
 
-h1 {
+.title {
   background: blue;
   grid-area: h1;
+  margin-top: 0;
 }
 header {
-  background: red;
+  background: rgb(253, 251, 251);
   grid-area: header;
+  margin-top: 0;
+}
+.headercontainer {
+  display: flex;
+  flex-direction: column;
+}
+header .header1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header1 input {
+  border-radius: 50px;
+  width: 40vw;
+  border: none;
+  padding: 0.7rem;
+  background: rgba(226, 221, 221, 0.932);
+}
+header .header1 button {
+  border: 1px solid;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+header .header1 i {
+  position: relative;
+  left: 1.5rem;
+}
+header .header2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+header .header2 .line {
+  width: 1px;
+  height: 2rem;
+  background: black;
 }
 .banner {
-  background: linear-gradient(yellow, blue);
+  background: url("./assets/nik-korba-3WceTBlUoMs-unsplash.jpg") center;
+  background-size: cover;
+  width: auto;
   grid-area: banner;
-  min-height: 20vh;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.banner .mainbannercontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+.banner .mainbannercontainer .motto {
+  font-size: 300%;
+  font-weight: bold;
+  color: white;
+}
+.banner .mainbannercontainer .note {
+  font-size: 150%;
+  font-weight: bold;
+  color: white;
+}
+.banner .mainbannercontainer input {
+  padding: 1rem 1rem 1rem 2rem;
+  border-radius: 5px;
+  border-color: white;
+  width: 100%;
+}
+.banner .photographer {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  color: white;
+}
+.banner .inputBox {
+  position: relative;
+}
+.banner .inputBox i {
+  position: absolute;
+  top: 1rem;
+  left: 0.8rem;
 }
 .off1 {
   background: green;
