@@ -23,6 +23,9 @@ header {
   background: rgb(253, 251, 251);
   grid-area: header;
   margin-top: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .headercontainer {
   display: flex;
