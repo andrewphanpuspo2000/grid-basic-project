@@ -206,6 +206,17 @@ header .header2 .line {
   align-items: center;
   border: solid 1px gray;
   width: 33%;
+  background: white;
+  position: relative;
+}
+.main .product1 button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  background: red;
+  color: white;
 }
 footer {
   background: black;
